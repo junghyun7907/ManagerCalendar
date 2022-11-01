@@ -5,10 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>ManagerCalendar</title>
+<!-- request.getContextPath() -> 프로젝트 Path만 가져옴 => 프로젝트 내에 있는 /css/style.css 경로를 가져옴 -->
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/style.css?ver=1">
 </head>
 <body>
 	<header>
-		<h3> 일정관리 </h3>
+		<h3> test </h3>
+		<div class="headerLogo">
+			<img alt="headerLogo" src="${pageContext.request.contextPath}/images/logo.png" width="180px" height="180px"/>
+		</div>
 	</header>
 	
 	<nav>
