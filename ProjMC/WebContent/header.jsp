@@ -10,10 +10,8 @@
 </head>
 <body>
 	<header>
+		<img alt="headerLogo" src="${pageContext.request.contextPath}/images/logo.png" width="125px" height="125px"/>
 		<h3> test </h3>
-		<div class="headerLogo">
-			<img alt="headerLogo" src="${pageContext.request.contextPath}/images/logo.png" width="180px" height="180px"/>
-		</div>
 	</header>
 	
 	<nav>
@@ -21,5 +19,3 @@
 			<!-- <li><a href="${pageContext.request.contextPath}/userInsert.jsp">회원가입</a></li>-->
 		</ul>
 	</nav>
-</body>
-</html>

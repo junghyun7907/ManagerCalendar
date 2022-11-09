@@ -19,12 +19,15 @@ header {
 	height: 100px;
 	background: rgb(255, 255, 204); <!-- 배경색 -->
 	text-align: center;
+	display: flex;
 	line-height: 100px; <!-- 줄높이 -->
 	color: rgb(000, 051, 102); <!-- 글꼴색 -->
 }
 
 .headerLogo img {
-	float: left;	
+	float: left;
+	display: flex;
+    justify-content: center;
 }
 
 section {
@@ -43,4 +46,10 @@ footer {
 	color: rgb(000, 051, 102);
 	position: absolute;
 	bottom: 0;
+}
+
+footer img {
+	float: left;
+	display: flex;
+    justify-content: center;
 }
