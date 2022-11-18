@@ -11,11 +11,11 @@
 <body>
 	<header>
 		<img alt="headerLogo" src="${pageContext.request.contextPath}/images/logo.png" width="125px" height="125px"/>
-		<h3> test </h3>
+			
+		<nav>
+			<ul>
+				<li><a href="./login/login.jsp">로그인/회원가입</a></li>
+				<li><a href="./login/logout.jsp">회원탈퇴</a></li>
+			</ul>
+		</nav>
 	</header>
-	
-	<nav>
-		<ul>
-			<!-- <li><a href="${pageContext.request.contextPath}/userInsert.jsp">회원가입</a></li>-->
-		</ul>
-	</nav>

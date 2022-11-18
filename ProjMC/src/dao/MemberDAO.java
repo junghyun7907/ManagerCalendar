@@ -101,4 +101,9 @@ public class MemberDAO {
 		}
 		return n;
 	}
+
+	public MemberVO getMemberDate(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

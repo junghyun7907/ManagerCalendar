@@ -23,5 +23,10 @@ public class MemberVO {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+
+	public Object getMemberPwd() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }
