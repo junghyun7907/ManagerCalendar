@@ -1,33 +1,37 @@
-@charset "UTF-8";
-
-.calendar {
-    width: 400px;
-    padding: 5px 20px 20px 20px;
-    box-sizing: border-box;
-    border: 1px solid;
+* {
     text-decoration: none;
     text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: auto;
+    list-style: none;
 }
 
-.calendar>.cal_header>.title {
+.calendar {
+    width: 800px;
+    padding: 5px 20px 20px 20px;
+}
+
+.calendar>.header>.title {
     width: 50%;
     display: inline-block;
-    border-bottom: 1px solid black;
+    font-size: 30px;
 }
 
-.calendar>.cal_header>.calendar_btn {
-    width: 30px;
+.calendar>.header>.calendar_btn {
+    width: 100px;
     height: 30px;
     border: none;
     padding: 0;
     background-color: #ffffff;
     vertical-align: middle;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.calendar>.cal_header>.calendar_btn:hover {
-    color: rosybrown;
+.calendar>.header>.calendar_btn:hover {
+    color: rgb(231, 143, 143);
 }
 
 .calendar>.day {
@@ -39,10 +43,11 @@
 .calendar>.day>div {
     display: table-cell;
     text-align: center;
-    height: 50px;
+    height: 70px;
     vertical-align: middle;
 }
 
+/* 일요일만 색 빨간색으로 함 */
 .calendar>.day>div:first-child {
     color: red;
 }
@@ -51,16 +56,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    border: 1px solid;
 }
 
 .calendar>.dates>.date {
     width: calc(100%/7);
-    height: 50px;
+    height: 60px;
     box-sizing: border-box;
     line-height: 3;
     border-radius: 3px;
 }
 
+/* 일요일만 나타내는 날짜를 빨간색으로 지정 */
 .calendar>.dates>.date:nth-child(7n+1) {
     color: red;
 }

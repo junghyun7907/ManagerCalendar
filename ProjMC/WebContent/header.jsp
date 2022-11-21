@@ -14,8 +14,8 @@
 			
 		<nav>
 			<ul>
-				<li><a href="./login/login.jsp">로그인/회원가입</a></li>
-				<li><a href="./login/logout.jsp">회원탈퇴</a></li>
+				<li><a href="./login/login.jsp">로그인/회원가입</a>&nbsp;&nbsp;||&nbsp;&nbsp;
+				<a href="./login/logout.jsp">회원탈퇴</a></li>&nbsp;&nbsp;&nbsp;
 			</ul>
 		</nav>
 	</header>

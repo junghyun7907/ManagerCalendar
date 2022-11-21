@@ -8,42 +8,46 @@
 <title>Insert title here</title>
 <style>
 	form {
-		background-color: #ccc;
+		background-color: rgb(173, 173, 247);
 		padding: 10px;
 		margin: 0 auto;
-		width: 300px;
+		width: 400px;
 	}
 	
 	.login_container {
-		border: 3px solid #f1f1f1;
 		padding: 16px;
+        border: 1px solid black;
 	}
 	
 	input[type=text], input[type=password] {
 		width: 100%;
-		padding: 12px 20px;
+		padding: 12px 5px;
 		margin: 8px 0;
 		display: inline-block;
 		border: 1px solid #ccc;
 	}
 	
 	input[type=submit] {
-		background-color: #4CAF50;
-		color: white;
+		background-color: white;
+		color: rgb(231, 231, 116);
 		padding: 14px 20px;
 		margin: 8px 0;
 		cursor: pointer;
 		width: 100%;
+        font-weight: bold;
+        font-size: 15px;
 	}
 	
 	a {
 		text-decoration: none;
-		color: black;
+		color: white;
+        float: right;
+        background-color: #ccc;
 	}
 </style>
 </head>
 <body>
-	<h2> 로그인 페이지 </h2>
+	<h2> 로그인/회원가입 페이지 </h2>
 	
 	<form action="/login" method="post">
 		<div class="login_container">
@@ -56,4 +60,3 @@
 			<a href="/member/register.jsp"> 회원가입 </a>
 		</div>
 	</form>
-<%@ include file="../footer.jsp" %>

@@ -12,16 +12,7 @@
     <title>calendar</title>
     <link rel="stylesheet" href="./css/calendar.css">
 </head>
-<body>
-    <header>	
-		<nav>
-			<ul>
-				<li><a href="./login/login.jsp">로그인/회원가입</a></li>
-				<li><a href="./login/logout.jsp">내정보</a></li>
-			</ul>
-		</nav>
-	</header>
-    
+<body>    
     <div class="calendar">
         <div class="cal_header">
             <button class="calendar_btn" onclick="prevCal();">&lt;</button>
@@ -62,7 +53,7 @@
                 dates.push(i); // 이번 달 날짜 채우기 
             }
             for (var i = 1; i <= 13 - thisLast.getDay(); i++) {
-                dates.push(i); // 다음 달 날짜 채우기 (나머지 다 채운 다음 출력할 때 42개만 출력함)
+                dates.push(i); // 다음 달 날짜 채우기
             }
     
             for (var i = 0; i < 42; i++) {
@@ -79,10 +70,13 @@
             document.querySelector(".dates").innerHTML = htmlDates;
         }
     
+        // 현재 달을 1 감소
         function prevCal() {
             CDate.setMonth(CDate.getMonth() - 1);
             buildcalendar();
         }
+        
+     	// 현재 달을 1 증가
         function nextCal() {
             CDate.setMonth(CDate.getMonth() + 1);
             buildcalendar();
